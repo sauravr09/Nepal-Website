@@ -1,0 +1,543 @@
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: #003893;
+    background-color: lightgrey;
+    font-size: large;
+}
+
+/*The Navigation styles*/
+.nav{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: crimson;
+    padding: 10px 20px;
+    max-height: 100px;
+}
+
+.navLogo{
+    display:flex;
+    align-items: center;
+}
+
+#navImg{
+    max-width: 150px;
+    margin-left: 50px;
+}
+
+.menu{
+    margin-right: 50px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+    font-size: 1.15em;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.menu li{
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.menu .top:hover{
+    background-color: blue;
+}
+
+.menu .submenu{
+    display: none;
+    position: absolute;
+    padding: 0px;
+    /* max-width: fit-content; */
+    top: 100%;
+    left:0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 1;
+}
+
+.menu .submenu li a{
+    display: block;
+    padding: 2px;
+    font-size: .95rem;
+}
+
+.menu .submenu li:hover{
+    background-color: red;
+}
+
+.menu li:hover .submenu{
+    display: flex;
+    background-color:#003893;
+    border-bottom: 5px;
+}
+
+.little{
+    text-align: center;
+}
+
+.homeImgHolder{
+    text-align: center;
+}
+
+.homeImg{
+    max-width: 80%;
+    border: 2px crimson solid;
+    border-radius: 10px;
+}
+
+.homeIntro{
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 2%;
+}
+
+.homeHr{
+    margin-left: 30%;
+    margin-right: 30%;
+    border: 1px solid crimson;
+}
+
+.overviewImg{
+    float:left;
+    max-width: 30%;
+    margin-right: 2%;
+    margin-left: 20%;
+}
+
+.overview{
+    margin-right: 15%;
+
+}
+
+/*Clear the floats to to back in block style.*/
+.clear{
+    clear: both;
+    padding-top: 2%;
+    text-align: center;
+}
+
+/*Cointainer to show a preview of the different activities*/
+.activities{
+    display:flex;
+    justify-content: space-around;
+    background-color:cornflowerblue;
+    height: 550px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 2px solid crimson;
+    border-radius: 10px;
+}
+
+.activityImg{
+    max-width: 40vh;
+}
+
+.activityImg:hover {
+    max-width: 45vh;
+    transition: .5s;
+}
+
+.activityTitle{
+    font-size: 1.45rem;
+    color: white;
+}
+
+.activityDesc{
+    color:aliceblue;
+    font-style: italic;
+}
+
+/*A leark more link that is found in Pokhara, Kathmandu, Everest Pages*/
+.activityLearnMore{
+    padding: 10px;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    border: 2px solid crimson;
+    background-color: cornflowerblue;
+}
+
+.activityLearnMoreLink{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+
+}
+
+.activityLearnMore .activityLearnMoreLink:hover{
+    background-color: crimson;
+}
+
+.kathmanduAct{
+    text-align: center;
+}
+
+.kathmanduActImgBig{
+    max-width: 50%;
+}
+
+/*Hold image in a flexbox; used in Kathmandu Page and Pokhara page*/
+.imagesHolder{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+figcaption{
+    font-size: small;
+    font-style: italic;
+    color: black;
+}
+
+.imageItem img{
+    max-width: 20vw;
+}
+
+.imageItem .night{
+    max-width: 40vw;
+}
+
+/*for Pokhara page*/
+.activityImgPokhara{
+    max-width: 50vh;
+}
+
+.activityImgPokhara:hover{
+    max-width: 55vh;
+    transition: 1s;
+}
+
+.activitiesPokhara{
+    display:flex;
+    justify-content: space-around;
+    background-color:cornflowerblue;
+    height: 450px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 2px solid crimson;
+    border-radius: 10px;
+
+}
+
+/*for Everest page*/
+.everestLearnMore{
+    padding: 10px;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    border: 2px solid crimson;
+    background-color: cornflowerblue;
+}
+
+.everestLearnMore .activityLearnMoreLink:hover{
+    background-color: crimson;
+}
+
+.map{
+    width: 40vw;
+    height: 50vh;
+    border: 0;
+    float: left;
+    margin-right: 2%;
+    margin-left: 15%;
+
+}
+/*Divder in the nav */
+#divider{
+    font-weight: bolder;
+}
+
+.refTable{
+    margin: auto;
+    border-color: black;
+}
+
+tbody tr{
+    height: 5vw;
+    font-size: small;
+}
+
+th{
+    padding-left: 8vw;
+    padding-right: 8vw;
+    border-bottom: 2px solid;
+}
+
+td{
+    text-align: center;
+}
+
+tr:nth-child(even){
+    background-color: lightcoral;
+}
+
+table a:hover{
+    color:white;
+}
+
+/*Comment Page CSS below.*/
+
+/* .plansBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 2px solid crimson;
+    border-radius: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+    background-color: cornflowerblue;
+    color: whitesmoke;    
+    text-align: left;
+} */
+
+/* .userName{
+    font-weight: bold;
+    color: red;
+} */
+
+
+
+.plansBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 15%;
+    margin-right: 15%;
+    color: white;
+    background-color: cornflowerblue;
+    border: 2px solid crimson;
+}
+
+.plansBox > div {
+    padding: 1%;
+    margin: 2px;
+}
+
+.user-name {
+    font-weight: bold;
+    color:brown; 
+    /* display: inline-block; */
+}
+
+.divider{
+    color: brown;
+}
+
+fieldset{
+    border: 2px solid crimson;
+    background-color:navajowhite;
+}
+
+.questions{
+    padding-left: 5%;
+}
+
+#field{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+legend{
+    font-size:x-large;
+    font-family: cursive;
+}
+
+.slider{
+    max-width: 50%;
+}
+
+#rating{
+    width: 100%;
+}
+
+#post{
+    cursor: pointer;
+    width: 5%;
+    background-color:firebrick;
+    font-size: 20px;
+    margin-bottom: 2%;
+    text-align: center;
+    color: antiquewhite;
+}
+
+#post:hover{
+    background-color: coral;
+}
+
+.buttonHolder{
+    text-align: center;
+}
+
+.commentSub{
+    color:black;
+}
+
+#expense-calculator{
+    width: 0%;
+    height: 0%;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid cornflowerblue;
+    margin: auto;
+    cursor: pointer;
+    transition: border-top 0.5s ease;
+}
+
+#expense-calculator:hover{
+    border-top: 100px solid crimson;
+}
+
+#calc{
+    margin-left: 20%;
+    padding-top: 2%;
+    display: none;
+}
+
+.expense-button{
+    margin-bottom: 3%;
+    margin-top: 3%;
+    margin-left: 20%;
+    font-size: 24px;
+    color: whitesmoke;
+    background-color: #003893;
+    cursor: pointer;
+    transition: background-color .3s ease-in;
+}
+
+.expense-button:hover{
+    background-color: crimson;
+}
+
+#total-expense{
+    color: black;
+    font-size: 20px;
+}
+
+#expense-cost{
+    font-weight: bold;
+    font-size: 22px;
+}
+#expense-result{
+    color: black;
+    font-size: 20px;
+}
+
+.expenses-outcome{
+    margin-right: 40%;
+}
+
+#scroll-up{
+    width: 0;
+	height: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 60px solid black;
+    transition: border-bottom .3s ease-in;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    opacity: .65;
+    cursor: pointer;
+}
+
+#scroll-up:hover{
+    border-bottom: 60px solid crimson;
+    opacity: 1;
+}
+
+.longHr{
+    border: 1px solid black;
+}
+/*Media query CSS below*/
+
+@media only screen and (max-width: 700px){
+    #navImg{
+        max-width: 150px;
+        margin-left: 5px;
+    }
+    .nav{
+        flex-direction: column;
+        max-height: fit-content;
+    }
+    .menu{
+        margin-right: 0px;
+        margin-right: 20px;
+    }
+    .overviewImg{
+        clear:both;
+        max-width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .overview{
+        clear:both;
+        text-align: center;
+        margin-right: 0px;
+    }
+    .overviewTitle{
+        clear: both;
+        text-align: center;
+    }
+    .activities{
+        flex-direction: column;
+        max-width: fit-content;
+        height: fit-content;
+    }
+
+    .activitiesPokhara{
+        flex-direction: column;
+        /* max-width: fit-content; */
+        height: fit-content;
+    }
+    .activityImgPokhara{
+        max-width: 40vh;
+    }
+
+    .activityImgPokhara:hover{
+        max-width: 45vh;
+    }
+    .activityLearnMore{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .imagesHolder{
+        flex-wrap: wrap;
+    }
+
+    .everestLearnMore{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .homeIntro{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .map{
+        width: 70vw;
+        height: 40vh;
+        margin-left: 10%;
+        margin-right: 10%;
+        clear: both;
+
+    }
+
+
+}
